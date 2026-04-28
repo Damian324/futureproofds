@@ -24,7 +24,7 @@ CORE_IMPORTS = {
 def main() -> None:
     for package, module_name in CORE_IMPORTS.items():
         importlib.import_module(module_name)
-    print("Edit this line to practice a tiny Git change.")
+    print("Successfully imported all core dependencies.")
 
 
 if __name__ == "__main__":
