@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "ai-workflows-dependency-audit"
+version = "0.1.0"
+description = "Audit repo to validate AI workflows bootcamp dependency compatibility"
+authors = ["Future Proof Data Science"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+psycopg2-binary = "^2.9.10"
+mcp = "^1.16.0"
+python-dotenv = "^1.1.1"
+langchain = "~0.3.0"
+langchain-core = "~0.3.0"
+langchain-openai = "~0.2.0"
+langgraph = "~0.2.0"
+pandas = "^2.0.0"
+numpy = "^1.24.0"
+streamlit = "^1.28.0"
+sqlalchemy = "^2.0.0"
+pyyaml = "^6.0.0"
+jupyter = "^1.0.0"
+ipykernel = "^6.0.0"
+matplotlib = "^3.7.0"
+seaborn = "^0.12.0"
+pandasai = "^3.0.0"
+pandasai-litellm = "^0.0.1"
+pandasai-sql = "^0.1.7"
+typing-extensions = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+ruff = "^0.6.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
