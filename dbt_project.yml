@@ -1,0 +1,6 @@
+name: futureproofds
+version: '1.0.0'
+config-version: 2
+profile: futureproofds
+
+model-paths: ["semantic_models"]

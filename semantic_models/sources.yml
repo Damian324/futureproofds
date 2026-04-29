@@ -1,0 +1,6 @@
+sources:
+  - name: fpds
+    schema: public
+    tables:
+      - name: fct_key_saas_byday
+      - name: fct_key_saas_bymonth
