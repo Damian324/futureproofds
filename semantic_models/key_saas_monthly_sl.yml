@@ -1,0 +1,120 @@
+semantic_models:
+  - name: keysaas_monthly_sl
+    description: >
+      Semantic layer for the Key SaaS monthly snapshot table. Contains monthly
+      aggregated lifecycle and revenue metrics for both NTS and Paid Subscriptions
+      across product lines.
+    defaults:
+      agg_time_dimension: interval_start
+    model: ref('stg_fct_key_saas_bymonth')
+
+    entities:
+      - name: keysaas_monthly_unique_key
+        type: primary
+        expr: unique_key
+
+    dimensions:
+      - name: interval_start
+        type: time
+        type_params:
+          time_granularity: month
+      - name: billing_account_id
+        type: categorical
+      - name: account_unique_key
+        type: categorical
+      - name: is_nts
+        type: categorical
+      - name: product
+        type: categorical
+      - name: plan_code
+        type: categorical
+      - name: plan_assistance_level
+        type: categorical
+      - name: plan_group
+        type: categorical
+      - name: billing_source
+        type: categorical
+      - name: country_name_asnow
+        type: categorical
+      - name: continent_asnow
+        type: categorical
+      - name: currency
+        type: categorical
+
+    measures:
+      - name: monthly_recurring_revenue_sum
+        expr: recurring_revenue
+        agg: sum
+      - name: monthly_new_revenue
+        expr: "case when first_time_recurring = 1 then recurring_revenue else 0 end"
+        agg: sum
+      - name: monthly_reactivated_revenue
+        expr: "case when reactivated_recurring_customer = 1 then recurring_revenue else 0 end"
+        agg: sum
+      - name: monthly_expanded_revenue
+        expr: expanded_recurring_revenue
+        agg: sum
+      - name: monthly_contracted_revenue # always negative
+        expr: contracted_recurring_revenue
+        agg: sum
+      - name: monthly_lost_recurring_revenue
+        expr: "case when churned_recurring = 1 then lost_recurring_revenue else 0 end"
+        agg: sum
+
+metrics:
+  - name: key_saas_monthly_new_revenue_mt
+    description: Recurring revenue from accounts becoming recurring for the first time in a given period.
+    label: "Monthly - New Revenue"
+    type: simple
+    type_params:
+      measure: monthly_new_revenue
+
+  - name: key_saas_monthly_reactivated_revenue_mt
+    description: Recurring revenue from previously churned accounts that have reactivated.
+    label: "Monthly - Reactivated Revenue"
+    type: simple
+    type_params:
+      measure: monthly_reactivated_revenue
+
+  - name: key_saas_monthly_expanded_revenue_mt
+    description: Revenue from existing recurring accounts that have expanded their plan.
+    label: "Monthly - Expanded Revenue"
+    type: simple
+    type_params:
+      measure: monthly_expanded_revenue
+
+  - name: key_saas_monthly_contracted_revenue_mt
+    description: Revenue reduction from existing recurring accounts that have downgraded. Always a negative value.
+    label: "Monthly - Contracted Revenue"
+    type: simple
+    type_params:
+      measure: monthly_contracted_revenue
+
+  - name: key_saas_monthly_lost_recurring_revenue_mt
+    description: Recurring revenue lost from churned accounts in the period.
+    label: "Monthly - Lost Recurring Revenue"
+    type: simple
+    type_params:
+      measure: monthly_lost_recurring_revenue
+
+  # NOTE: Full MRR formula = Starting MRR + New + Reactivated + Expanded + Contracted - Lost
+  # Starting MRR requires a lag/offset on recurring_revenue_sum from the prior period.
+  # This cannot be expressed natively in MetricFlow and must be handled at the
+  # query or BI layer (e.g. a window function in SQL or a calculated field in your BI tool).
+  # The derived metric below covers the net change components only.
+  - name: key_saas_monthly_mrr_mt
+    description: >
+      Monthly Recurring Revenue net change components: New + Reactivated + Expanded
+      + Contracted - Lost. Note: Starting MRR (prior period recurring_revenue_sum)
+      must be added at the query/BI layer as it requires a lag calculation not
+      supported natively in MetricFlow.
+    label: "Monthly - MRR"
+    type: derived
+    type_params:
+      expr: key_saas_monthly_new_revenue_mt + key_saas_monthly_reactivated_revenue_mt + key_saas_monthly_expanded_revenue_mt + key_saas_monthly_contracted_revenue_mt - key_saas_monthly_lost_recurring_revenue_mt
+      metrics:
+        - name: key_saas_monthly_new_revenue_mt
+        - name: key_saas_monthly_reactivated_revenue_mt
+        - name: key_saas_monthly_expanded_revenue_mt
+        - name: key_saas_monthly_contracted_revenue_mt
+        - name: key_saas_monthly_lost_recurring_revenue_mt

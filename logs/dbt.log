@@ -1,0 +1,1038 @@
+[0m13:16:19.273583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f422c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11131d1b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11131d870>]}
+
+
+============================== 13:16:19.289973 | 8bdba517-33f0-424d-b523-c7435f648be3 ==============================
+[0m13:16:19.289973 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:16:19.290239 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'no_print': 'None', 'version_check': 'True', 'introspect': 'True', 'quiet': 'True', 'profiles_dir': '/Users/damian.sanchez/Desktop/repos/futureproofds', 'static_parser': 'True', 'invocation_command': 'dbt validate-configs', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'printer_width': '80', 'debug': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'target_path': 'None', 'write_json': 'True', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m13:16:19.311487 [info ] [MainThread]: dbt version: 1.11.8
+[0m13:16:19.311703 [info ] [MainThread]: python version: 3.10.20
+[0m13:16:19.311828 [info ] [MainThread]: python path: /Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/bin/python
+[0m13:16:19.311945 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m13:16:19.312066 [info ] [MainThread]: Using profiles dir at /Users/damian.sanchez/Desktop/repos/futureproofds
+[0m13:16:19.312174 [info ] [MainThread]: Using profiles.yml file at /Users/damian.sanchez/Desktop/repos/futureproofds/profiles.yml
+[0m13:16:19.312280 [info ] [MainThread]: Using dbt_project.yml file at /Users/damian.sanchez/Desktop/repos/futureproofds/dbt_project.yml
+[0m13:16:19.363778 [info ] [MainThread]: Configuration:
+[0m13:16:19.364022 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m13:16:19.364136 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:16:19.364237 [info ] [MainThread]: Required dependencies:
+[0m13:16:19.364410 [debug] [MainThread]: Executing "git --help"
+[0m13:16:19.375718 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:16:19.376122 [debug] [MainThread]: STDERR: "b''"
+[0m13:16:19.376259 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:16:19.376370 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:16:19.376476 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:16:19.376578 [info ] [MainThread]: dbt looked for a profiles.yml file in /Users/damian.sanchez/Desktop/repos/futureproofds/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:16:19.504752 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.33202213, "process_in_blocks": "0", "process_kernel_time": 0.190514, "process_mem_max_rss": "163971072", "process_out_blocks": "0", "process_user_time": 1.437753}
+[0m13:16:19.505271 [debug] [MainThread]: Command `cli debug` failed at 13:16:19.505192 after 0.33 seconds
+[0m13:16:19.505637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f422c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107379030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11152a770>]}
+[0m13:16:19.505987 [debug] [MainThread]: Flushing usage events
+[0m13:16:19.859452 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:16:39.355014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107492380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a991330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9919f0>]}
+
+
+============================== 13:16:39.356940 | d2ede34a-0887-4cff-b788-4922b231520b ==============================
+[0m13:16:39.356940 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:16:39.357217 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/damian.sanchez/.dbt', 'quiet': 'False', 'partial_parse': 'True', 'write_json': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'no_print': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'use_experimental_parser': 'False', 'warn_error': 'None', 'empty': 'None'}
+[0m13:16:39.361105 [info ] [MainThread]: dbt version: 1.11.8
+[0m13:16:39.361249 [info ] [MainThread]: python version: 3.10.20
+[0m13:16:39.361364 [info ] [MainThread]: python path: /Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/bin/python
+[0m13:16:39.361474 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m13:16:39.600169 [info ] [MainThread]: Using profiles dir at /Users/damian.sanchez/.dbt
+[0m13:16:39.600505 [info ] [MainThread]: Using profiles.yml file at /Users/damian.sanchez/.dbt/profiles.yml
+[0m13:16:39.600672 [info ] [MainThread]: Using dbt_project.yml file at /Users/damian.sanchez/Desktop/repos/futureproofds/dbt_project.yml
+[0m13:16:39.601378 [info ] [MainThread]: adapter type: postgres
+[0m13:16:39.601564 [info ] [MainThread]: adapter version: 1.10.0
+[0m13:16:39.658435 [info ] [MainThread]: Configuration:
+[0m13:16:39.658796 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:16:39.658927 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:16:39.659041 [info ] [MainThread]: Required dependencies:
+[0m13:16:39.659217 [debug] [MainThread]: Executing "git --help"
+[0m13:16:39.669658 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:16:39.670113 [debug] [MainThread]: STDERR: "b''"
+[0m13:16:39.670263 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:16:39.670402 [info ] [MainThread]: Connection:
+[0m13:16:39.670561 [info ] [MainThread]:   host: localhost
+[0m13:16:39.670673 [info ] [MainThread]:   port: 5432
+[0m13:16:39.670779 [info ] [MainThread]:   user: damian.sanchez
+[0m13:16:39.670885 [info ] [MainThread]:   database: fpds
+[0m13:16:39.670990 [info ] [MainThread]:   schema: public
+[0m13:16:39.671096 [info ] [MainThread]:   connect_timeout: 10
+[0m13:16:39.671201 [info ] [MainThread]:   role: None
+[0m13:16:39.671303 [info ] [MainThread]:   search_path: None
+[0m13:16:39.671407 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:16:39.671512 [info ] [MainThread]:   sslmode: None
+[0m13:16:39.671617 [info ] [MainThread]:   sslcert: None
+[0m13:16:39.671725 [info ] [MainThread]:   sslkey: None
+[0m13:16:39.671832 [info ] [MainThread]:   sslrootcert: None
+[0m13:16:39.671963 [info ] [MainThread]:   application_name: dbt
+[0m13:16:39.672068 [info ] [MainThread]:   retries: 1
+[0m13:16:39.672372 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:16:39.811561 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:16:39.840594 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:16:39.840802 [debug] [MainThread]: On debug: select 1 as id
+[0m13:16:39.840916 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:16:39.855138 [debug] [MainThread]: SQL status: SELECT 1 in 0.014 seconds
+[0m13:16:39.855611 [debug] [MainThread]: On debug: Close
+[0m13:16:39.855775 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:16:39.855908 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:16:39.856654 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.58740973, "process_in_blocks": "0", "process_kernel_time": 0.197253, "process_mem_max_rss": "153092096", "process_out_blocks": "0", "process_user_time": 1.401324}
+[0m13:16:39.856852 [debug] [MainThread]: Command `dbt debug` succeeded at 13:16:39.856812 after 0.59 seconds
+[0m13:16:39.856983 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:16:39.857123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107492380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1ee740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a008b0>]}
+[0m13:16:39.857286 [debug] [MainThread]: Flushing usage events
+[0m13:16:40.184114 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:17:39.958829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089c1e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a71cd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a71d3c0>]}
+
+
+============================== 13:17:39.960694 | 9fcddc31-124e-4f98-975a-4e24a58c5a8c ==============================
+[0m13:17:39.960694 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:17:39.960942 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'printer_width': '80', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'cache_selected_only': 'False', 'invocation_command': 'dbt validate-configs', 'log_cache_events': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'fail_fast': 'False', 'introspect': 'True', 'write_json': 'True', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'version_check': 'True', 'use_colors': 'True', 'debug': 'False', 'empty': 'None', 'warn_error': 'None', 'quiet': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default'}
+[0m13:17:39.964885 [info ] [MainThread]: dbt version: 1.11.8
+[0m13:17:39.965047 [info ] [MainThread]: python version: 3.10.20
+[0m13:17:39.965155 [info ] [MainThread]: python path: /Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/bin/python
+[0m13:17:39.965257 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m13:17:39.988013 [info ] [MainThread]: Using profiles dir at /Users/damian.sanchez/.dbt
+[0m13:17:39.988248 [info ] [MainThread]: Using profiles.yml file at /Users/damian.sanchez/.dbt/profiles.yml
+[0m13:17:39.988368 [info ] [MainThread]: Using dbt_project.yml file at /Users/damian.sanchez/Desktop/repos/futureproofds/dbt_project.yml
+[0m13:17:39.988576 [info ] [MainThread]: adapter type: postgres
+[0m13:17:39.988682 [info ] [MainThread]: adapter version: 1.10.0
+[0m13:17:40.039327 [info ] [MainThread]: Configuration:
+[0m13:17:40.039626 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:17:40.039756 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:17:40.039860 [info ] [MainThread]: Required dependencies:
+[0m13:17:40.040030 [debug] [MainThread]: Executing "git --help"
+[0m13:17:40.050113 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:17:40.050524 [debug] [MainThread]: STDERR: "b''"
+[0m13:17:40.050661 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:17:40.050774 [info ] [MainThread]: Connection:
+[0m13:17:40.050919 [info ] [MainThread]:   host: localhost
+[0m13:17:40.051018 [info ] [MainThread]:   port: 5432
+[0m13:17:40.051112 [info ] [MainThread]:   user: damian.sanchez
+[0m13:17:40.051204 [info ] [MainThread]:   database: fpds
+[0m13:17:40.051296 [info ] [MainThread]:   schema: public
+[0m13:17:40.051387 [info ] [MainThread]:   connect_timeout: 10
+[0m13:17:40.051478 [info ] [MainThread]:   role: None
+[0m13:17:40.051570 [info ] [MainThread]:   search_path: None
+[0m13:17:40.051660 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:17:40.051751 [info ] [MainThread]:   sslmode: None
+[0m13:17:40.051846 [info ] [MainThread]:   sslcert: None
+[0m13:17:40.051935 [info ] [MainThread]:   sslkey: None
+[0m13:17:40.052028 [info ] [MainThread]:   sslrootcert: None
+[0m13:17:40.052117 [info ] [MainThread]:   application_name: dbt
+[0m13:17:40.052211 [info ] [MainThread]:   retries: 1
+[0m13:17:40.052502 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:17:40.121987 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:17:40.140468 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:17:40.140681 [debug] [MainThread]: On debug: select 1 as id
+[0m13:17:40.140829 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:17:40.154376 [debug] [MainThread]: SQL status: SELECT 1 in 0.014 seconds
+[0m13:17:40.154855 [debug] [MainThread]: On debug: Close
+[0m13:17:40.155018 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:17:40.155137 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:17:40.155948 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.24285267, "process_in_blocks": "0", "process_kernel_time": 0.204847, "process_mem_max_rss": "163430400", "process_out_blocks": "0", "process_user_time": 1.47988}
+[0m13:17:40.156167 [debug] [MainThread]: Command `cli debug` succeeded at 13:17:40.156127 after 0.24 seconds
+[0m13:17:40.156306 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:17:40.156460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089c1e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a647df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad155d0>]}
+[0m13:17:40.156636 [debug] [MainThread]: Flushing usage events
+[0m13:17:40.491251 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:17:50.821817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca0e140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f3984c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f398b80>]}
+
+
+============================== 13:17:50.823826 | 5c03248c-4c27-4984-9245-8ce42906d0f7 ==============================
+[0m13:17:50.823826 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:17:50.824101 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'printer_width': '80', 'log_format': 'default', 'static_parser': 'True', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'introspect': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'no_print': 'None', 'target_path': 'None', 'invocation_command': 'dbt parse', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'warn_error': 'None', 'write_json': 'True'}
+[0m13:17:50.924056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5c03248c-4c27-4984-9245-8ce42906d0f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f465e10>]}
+[0m13:17:50.954893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5c03248c-4c27-4984-9245-8ce42906d0f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e322590>]}
+[0m13:17:50.955428 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:17:51.010299 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:17:51.010696 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:17:51.010864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5c03248c-4c27-4984-9245-8ce42906d0f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f883970>]}
+[0m13:17:51.372145 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid semantic_models config given in FilePath(searched_path='semantic_models', relative_path='key_saas_monthly_sl.yml', modification_time=1777493592.4135547, project_root='/Users/damian.sanchez/Desktop/repos/futureproofds') @ semantic_models: {'name': 'keysaas_monthly_sl', 'description': 'Semantic layer for the Key SaaS monthly snapshot table. Contains monthly aggregated lifecycle and revenue metrics for both NTS and Paid Subscriptions across product lines.\n', 'defaults': {'agg_time_dimension': 'interval_start'}, 'node_relation': {'schema_name': 'public', 'alias': 'fct_key_saas_bymonth'}, 'entities': [{'name': 'keysaas_monthly_unique_key', 'type': 'primary', 'expr': 'unique_key'}], 'dimensions': [{'name': 'interval_start', 'type': 'time', 'type_params': {'time_granularity': 'month'}}, {'name': 'billing_account_id', 'type': 'categorical'}, {'name': 'account_unique_key', 'type': 'categorical'}, {'name': 'is_nts', 'type': 'categorical'}, {'name': 'product', 'type': 'categorical'}, {'name': 'plan_code', 'type': 'categorical'}, {'name': 'plan_assistance_level', 'type': 'categorical'}, {'name': 'plan_group', 'type': 'categorical'}, {'name': 'billing_source', 'type': 'categorical'}, {'name': 'country_name_asnow', 'type': 'categorical'}, {'name': 'continent_asnow', 'type': 'categorical'}, {'name': 'currency', 'type': 'categorical'}], 'measures': [{'name': 'monthly_recurring_revenue_sum', 'expr': 'recurring_revenue', 'agg': 'sum'}, {'name': 'monthly_new_revenue', 'expr': 'case when first_time_recurring = 1 then recurring_revenue else 0 end', 'agg': 'sum'}, {'name': 'monthly_reactivated_revenue', 'expr': 'case when reactivated_recurring_customer = 1 then recurring_revenue else 0 end', 'agg': 'sum'}, {'name': 'monthly_expanded_revenue', 'expr': 'expanded_recurring_revenue', 'agg': 'sum'}, {'name': 'monthly_contracted_revenue', 'expr': 'contracted_recurring_revenue', 'agg': 'sum'}, {'name': 'monthly_lost_recurring_revenue', 'expr': 'case when churned_recurring = 1 then lost_recurring_revenue else 0 end', 'agg': 'sum'}]} - at path []: Additional properties are not allowed ('node_relation' was unexpected)
+[0m13:17:51.373232 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 0.6349194, "process_in_blocks": "0", "process_kernel_time": 0.186919, "process_mem_max_rss": "149716992", "process_out_blocks": "0", "process_user_time": 1.719157}
+[0m13:17:51.373449 [debug] [MainThread]: Command `dbt parse` failed at 13:17:51.373408 after 0.64 seconds
+[0m13:17:51.373619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca0e140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f85e770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1185d1090>]}
+[0m13:17:51.373784 [debug] [MainThread]: Flushing usage events
+[0m13:17:51.702278 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:18:37.205947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a263850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba96230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba968f0>]}
+
+
+============================== 13:18:37.207635 | 93658268-0ab6-4472-8de4-ca1aca8d8a0a ==============================
+[0m13:18:37.207635 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:18:37.207917 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'warn_error': 'None', 'target_path': 'None', 'version_check': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'no_print': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'log_format': 'default', 'empty': 'None', 'debug': 'False', 'static_parser': 'True', 'introspect': 'True', 'printer_width': '80', 'partial_parse': 'True', 'invocation_command': 'dbt parse', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs'}
+[0m13:18:37.293864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '93658268-0ab6-4472-8de4-ca1aca8d8a0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba0eaa0>]}
+[0m13:18:37.324758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '93658268-0ab6-4472-8de4-ca1aca8d8a0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bca3af0>]}
+[0m13:18:37.325220 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:18:37.381520 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:18:37.381928 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:18:37.382128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '93658268-0ab6-4472-8de4-ca1aca8d8a0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8f24d0>]}
+[0m13:18:37.730464 [error] [MainThread]: Encountered an error:
+Compilation Error in semantic_model keysaas_monthly_sl (semantic_models/key_saas_monthly_sl.yml)
+  'source' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m13:18:37.731405 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 0.61224896, "process_in_blocks": "0", "process_kernel_time": 0.199741, "process_mem_max_rss": "148553728", "process_out_blocks": "0", "process_user_time": 1.704146}
+[0m13:18:37.731601 [debug] [MainThread]: Command `dbt parse` failed at 13:18:37.731563 after 0.61 seconds
+[0m13:18:37.731761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a263850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf82b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf80220>]}
+[0m13:18:37.731914 [debug] [MainThread]: Flushing usage events
+[0m13:18:38.056744 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:19:13.184803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112e21d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112590c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112591330>]}
+
+
+============================== 13:19:13.186819 | e2edc0c5-a669-48a0-90f3-bc0b740d85d3 ==============================
+[0m13:19:13.186819 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:19:13.187138 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt parse', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'quiet': 'False', 'version_check': 'True', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'no_print': 'None', 'use_colors': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'target_path': 'None', 'debug': 'False', 'printer_width': '80', 'partial_parse': 'True', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'write_json': 'True', 'fail_fast': 'False', 'static_parser': 'True'}
+[0m13:19:13.285243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e2edc0c5-a669-48a0-90f3-bc0b740d85d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106afbee0>]}
+[0m13:19:13.318146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e2edc0c5-a669-48a0-90f3-bc0b740d85d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116a4d00>]}
+[0m13:19:13.318663 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:19:13.374774 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:19:13.375155 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:19:13.375321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e2edc0c5-a669-48a0-90f3-bc0b740d85d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11345fb50>]}
+[0m13:19:13.899240 [error] [MainThread]: Encountered an error:
+1 validation error for PydanticSemanticModel
+node_relation -> relation_name
+  none is not an allowed value (type=type_error.none.not_allowed)
+[0m13:19:13.900801 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 391, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 407, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 434, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/parser/manifest.py", line 2257, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/parser/manifest.py", line 323, in get_full_manifest
+    manifest = loader.load()
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/parser/manifest.py", line 493, in load
+    if not semantic_manifest.validate():
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/contracts/graph/semantic_manifest.py", line 65, in validate
+    semantic_manifest = self._get_pydantic_semantic_manifest()
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/dbt/contracts/graph/semantic_manifest.py", line 185, in _get_pydantic_semantic_manifest
+    PydanticSemanticModel.parse_obj(semantic_model.to_dict())
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/pydantic/v1/main.py", line 549, in parse_obj
+    return cls(**obj)
+  File "/Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/lib/python3.10/site-packages/pydantic/v1/main.py", line 364, in __init__
+    raise validation_error
+pydantic.v1.error_wrappers.ValidationError: 1 validation error for PydanticSemanticModel
+node_relation -> relation_name
+  none is not an allowed value (type=type_error.none.not_allowed)
+
+[0m13:19:13.901729 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 0.80000037, "process_in_blocks": "0", "process_kernel_time": 0.187399, "process_mem_max_rss": "159088640", "process_out_blocks": "0", "process_user_time": 1.879787}
+[0m13:19:13.901928 [debug] [MainThread]: Command `dbt parse` failed at 13:19:13.901889 after 0.80 seconds
+[0m13:19:13.902102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112e21d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115b32680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115b33520>]}
+[0m13:19:13.902257 [debug] [MainThread]: Flushing usage events
+[0m13:19:14.241756 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:19:29.113325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114292590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1160f8fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1160f9690>]}
+
+
+============================== 13:19:29.115015 | 7ce7465c-a785-4220-90b5-7735332f0c5c ==============================
+[0m13:19:29.115015 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:19:29.115495 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'warn_error': 'None', 'invocation_command': 'dbt run', 'empty': 'False', 'partial_parse': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'introspect': 'True', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'write_json': 'True', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'log_cache_events': 'False'}
+[0m13:19:29.200237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7ce7465c-a785-4220-90b5-7735332f0c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1160f96f0>]}
+[0m13:19:29.230753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7ce7465c-a785-4220-90b5-7735332f0c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1161b1840>]}
+[0m13:19:29.231298 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:19:29.287708 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:19:29.288146 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:19:29.288316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7ce7465c-a785-4220-90b5-7735332f0c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116e52f80>]}
+[0m13:19:29.805685 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The semantic layer requires a time spine model with granularity DAY or smaller in the project, but none was found. Guidance on creating this model can be found on our docs site (https://docs.getdbt.com/docs/build/metricflow-time-spine).
+[0m13:19:29.806692 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.7390353, "process_in_blocks": "0", "process_kernel_time": 0.203045, "process_mem_max_rss": "157827072", "process_out_blocks": "0", "process_user_time": 1.864195}
+[0m13:19:29.806909 [debug] [MainThread]: Command `dbt run` failed at 13:19:29.806870 after 0.74 seconds
+[0m13:19:29.807081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114292590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120b79300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120b79ae0>]}
+[0m13:19:29.807245 [debug] [MainThread]: Flushing usage events
+[0m13:19:30.135617 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:19:53.964876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11196b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132fb4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132fae00>]}
+
+
+============================== 13:19:53.967167 | 48ef3b3d-0d63-453f-979c-4d09ee2f1fc2 ==============================
+[0m13:19:53.967167 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:19:53.967439 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_format': 'default', 'version_check': 'True', 'fail_fast': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'empty': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'warn_error': 'None', 'write_json': 'True', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'target_path': 'None', 'printer_width': '80', 'cache_selected_only': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'no_print': 'None'}
+[0m13:19:54.051587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '48ef3b3d-0d63-453f-979c-4d09ee2f1fc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076b4e20>]}
+[0m13:19:54.082786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '48ef3b3d-0d63-453f-979c-4d09ee2f1fc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112958580>]}
+[0m13:19:54.083325 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:19:54.140810 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:19:54.141271 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:19:54.141460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '48ef3b3d-0d63-453f-979c-4d09ee2f1fc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114039930>]}
+[0m13:19:54.557326 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid models config given in semantic_models/metricflow_time_spine.yml @ models: {'name': 'metricflow_time_spine', 'description': 'Required time spine for MetricFlow with daily granularity.', 'time_spine': {'standard_granularity_column': {'column': 'date_day', 'grain': 'day'}}, 'original_file_path': 'semantic_models/metricflow_time_spine.yml', 'yaml_key': 'models', 'package_name': 'futureproofds'} - at path ['time_spine']: {'standard_granularity_column': {'column': 'date_day', 'grain': 'day'}} is not valid under any of the given schemas
+[0m13:19:54.558385 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.6399796, "process_in_blocks": "0", "process_kernel_time": 0.184759, "process_mem_max_rss": "154091520", "process_out_blocks": "0", "process_user_time": 1.766486}
+[0m13:19:54.558596 [debug] [MainThread]: Command `dbt run` failed at 13:19:54.558554 after 0.64 seconds
+[0m13:19:54.558763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11196b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133eb790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114791480>]}
+[0m13:19:54.558923 [debug] [MainThread]: Flushing usage events
+[0m13:19:54.886763 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:21:43.630996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061233a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074ff4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074fee00>]}
+
+
+============================== 13:21:43.633445 | 927d9dcc-4960-40b1-88d1-d64e9c452445 ==============================
+[0m13:21:43.633445 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:21:43.633731 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_cache_events': 'False', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'fail_fast': 'False', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error': 'None', 'log_format': 'default', 'introspect': 'True', 'write_json': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'printer_width': '80', 'empty': 'False'}
+[0m13:21:43.733731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039b4160>]}
+[0m13:21:43.768101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b02d70>]}
+[0m13:21:43.768831 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:21:43.828488 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:21:43.828904 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:21:43.829074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d60730>]}
+[0m13:21:44.420204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118c0130>]}
+[0m13:21:44.471813 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/damian.sanchez/Desktop/repos/futureproofds/target/manifest.json
+[0m13:21:44.474462 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/damian.sanchez/Desktop/repos/futureproofds/target/semantic_manifest.json
+[0m13:21:44.486904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111836d40>]}
+[0m13:21:44.487178 [info ] [MainThread]: Found 3 models, 2 sources, 11 metrics, 465 macros, 2 semantic models
+[0m13:21:44.487321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111836dd0>]}
+[0m13:21:44.488055 [info ] [MainThread]: 
+[0m13:21:44.488199 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:21:44.488310 [info ] [MainThread]: 
+[0m13:21:44.488513 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m13:21:44.490205 [debug] [ThreadPool]: Acquiring new postgres connection 'list_fpds'
+[0m13:21:44.568748 [debug] [ThreadPool]: Using postgres connection "list_fpds"
+[0m13:21:44.568983 [debug] [ThreadPool]: On list_fpds: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "connection_name": "list_fpds"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m13:21:44.569116 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:21:44.588242 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.019 seconds
+[0m13:21:44.588854 [debug] [ThreadPool]: On list_fpds: Close
+[0m13:21:44.589414 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_fpds, now list_fpds_public)
+[0m13:21:44.591879 [debug] [ThreadPool]: Using postgres connection "list_fpds_public"
+[0m13:21:44.592032 [debug] [ThreadPool]: On list_fpds_public: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "connection_name": "list_fpds_public"} */
+select
+      'fpds' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'fpds' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'fpds' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m13:21:44.592158 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:21:44.607206 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.015 seconds
+[0m13:21:44.607757 [debug] [ThreadPool]: On list_fpds_public: ROLLBACK
+[0m13:21:44.608158 [debug] [ThreadPool]: On list_fpds_public: Close
+[0m13:21:44.610135 [debug] [MainThread]: Using postgres connection "master"
+[0m13:21:44.610319 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m13:21:44.610488 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:21:44.626535 [debug] [MainThread]: SQL status: SELECT 0 in 0.016 seconds
+[0m13:21:44.627048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1115b2440>]}
+[0m13:21:44.627280 [debug] [MainThread]: On master: ROLLBACK
+[0m13:21:44.627657 [debug] [MainThread]: On master: COMMIT
+[0m13:21:44.627794 [debug] [MainThread]: Using postgres connection "master"
+[0m13:21:44.627913 [debug] [MainThread]: On master: COMMIT
+[0m13:21:44.628408 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m13:21:44.628542 [debug] [MainThread]: On master: Close
+[0m13:21:44.630774 [debug] [Thread-1 (]: Began running node model.futureproofds.metricflow_time_spine
+[0m13:21:44.631051 [info ] [Thread-1 (]: 1 of 3 START sql table model public.metricflow_time_spine ...................... [RUN]
+[0m13:21:44.631293 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_fpds_public, now model.futureproofds.metricflow_time_spine)
+[0m13:21:44.631459 [debug] [Thread-1 (]: Began compiling node model.futureproofds.metricflow_time_spine
+[0m13:21:44.635252 [debug] [Thread-1 (]: Writing injected SQL for node "model.futureproofds.metricflow_time_spine"
+[0m13:21:44.635799 [debug] [Thread-1 (]: Began executing node model.futureproofds.metricflow_time_spine
+[0m13:21:44.651871 [debug] [Thread-1 (]: Writing runtime sql for node "model.futureproofds.metricflow_time_spine"
+[0m13:21:44.652479 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.metricflow_time_spine"
+[0m13:21:44.652645 [debug] [Thread-1 (]: On model.futureproofds.metricflow_time_spine: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.metricflow_time_spine"} */
+
+  
+    
+
+  create  table "fpds"."public"."metricflow_time_spine__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with days as (
+    select generate_series(
+        '2020-01-01'::date,
+        '2030-12-31'::date,
+        '1 day'::interval
+    )::date as date_day
+)
+
+select date_day from days
+  );
+  
+[0m13:21:44.652798 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:21:44.673849 [debug] [Thread-1 (]: SQL status: SELECT 4018 in 0.021 seconds
+[0m13:21:44.678262 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.metricflow_time_spine"
+[0m13:21:44.678447 [debug] [Thread-1 (]: On model.futureproofds.metricflow_time_spine: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.metricflow_time_spine"} */
+alter table "fpds"."public"."metricflow_time_spine__dbt_tmp" rename to "metricflow_time_spine"
+[0m13:21:44.679318 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:21:44.685968 [debug] [Thread-1 (]: On model.futureproofds.metricflow_time_spine: COMMIT
+[0m13:21:44.686146 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.metricflow_time_spine"
+[0m13:21:44.686309 [debug] [Thread-1 (]: On model.futureproofds.metricflow_time_spine: COMMIT
+[0m13:21:44.687154 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m13:21:44.689714 [debug] [Thread-1 (]: Applying DROP to: "fpds"."public"."metricflow_time_spine__dbt_backup"
+[0m13:21:44.691847 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.metricflow_time_spine"
+[0m13:21:44.692116 [debug] [Thread-1 (]: On model.futureproofds.metricflow_time_spine: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.metricflow_time_spine"} */
+drop table if exists "fpds"."public"."metricflow_time_spine__dbt_backup" cascade
+[0m13:21:44.692661 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m13:21:44.693861 [debug] [Thread-1 (]: On model.futureproofds.metricflow_time_spine: Close
+[0m13:21:44.695074 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a74c40>]}
+[0m13:21:44.695405 [info ] [Thread-1 (]: 1 of 3 OK created sql table model public.metricflow_time_spine ................. [[32mSELECT 4018[0m in 0.06s]
+[0m13:21:44.695662 [debug] [Thread-1 (]: Finished running node model.futureproofds.metricflow_time_spine
+[0m13:21:44.695842 [debug] [Thread-1 (]: Began running node model.futureproofds.stg_fct_key_saas_byday
+[0m13:21:44.696084 [info ] [Thread-1 (]: 2 of 3 START sql view model public.stg_fct_key_saas_byday ...................... [RUN]
+[0m13:21:44.696286 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.futureproofds.metricflow_time_spine, now model.futureproofds.stg_fct_key_saas_byday)
+[0m13:21:44.696444 [debug] [Thread-1 (]: Began compiling node model.futureproofds.stg_fct_key_saas_byday
+[0m13:21:44.697738 [debug] [Thread-1 (]: Writing injected SQL for node "model.futureproofds.stg_fct_key_saas_byday"
+[0m13:21:44.698043 [debug] [Thread-1 (]: Began executing node model.futureproofds.stg_fct_key_saas_byday
+[0m13:21:44.705783 [debug] [Thread-1 (]: Writing runtime sql for node "model.futureproofds.stg_fct_key_saas_byday"
+[0m13:21:44.706089 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.stg_fct_key_saas_byday"
+[0m13:21:44.706242 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_byday: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.stg_fct_key_saas_byday"} */
+
+  create view "fpds"."public"."stg_fct_key_saas_byday__dbt_tmp"
+    
+    
+  as (
+    
+
+select * from "fpds"."public"."fct_key_saas_byday"
+  );
+[0m13:21:44.706387 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:21:44.723789 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.017 seconds
+[0m13:21:44.725348 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.stg_fct_key_saas_byday"
+[0m13:21:44.725535 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_byday: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.stg_fct_key_saas_byday"} */
+alter table "fpds"."public"."stg_fct_key_saas_byday__dbt_tmp" rename to "stg_fct_key_saas_byday"
+[0m13:21:44.726522 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:21:44.727097 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_byday: COMMIT
+[0m13:21:44.727258 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.stg_fct_key_saas_byday"
+[0m13:21:44.727402 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_byday: COMMIT
+[0m13:21:44.729254 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:21:44.730313 [debug] [Thread-1 (]: Applying DROP to: "fpds"."public"."stg_fct_key_saas_byday__dbt_backup"
+[0m13:21:44.731464 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.stg_fct_key_saas_byday"
+[0m13:21:44.731624 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_byday: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.stg_fct_key_saas_byday"} */
+drop view if exists "fpds"."public"."stg_fct_key_saas_byday__dbt_backup" cascade
+[0m13:21:44.732085 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m13:21:44.732583 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_byday: Close
+[0m13:21:44.732865 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119d8370>]}
+[0m13:21:44.733152 [info ] [Thread-1 (]: 2 of 3 OK created sql view model public.stg_fct_key_saas_byday ................. [[32mCREATE VIEW[0m in 0.04s]
+[0m13:21:44.733394 [debug] [Thread-1 (]: Finished running node model.futureproofds.stg_fct_key_saas_byday
+[0m13:21:44.733576 [debug] [Thread-1 (]: Began running node model.futureproofds.stg_fct_key_saas_bymonth
+[0m13:21:44.733818 [info ] [Thread-1 (]: 3 of 3 START sql view model public.stg_fct_key_saas_bymonth .................... [RUN]
+[0m13:21:44.734009 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.futureproofds.stg_fct_key_saas_byday, now model.futureproofds.stg_fct_key_saas_bymonth)
+[0m13:21:44.734160 [debug] [Thread-1 (]: Began compiling node model.futureproofds.stg_fct_key_saas_bymonth
+[0m13:21:44.735368 [debug] [Thread-1 (]: Writing injected SQL for node "model.futureproofds.stg_fct_key_saas_bymonth"
+[0m13:21:44.735683 [debug] [Thread-1 (]: Began executing node model.futureproofds.stg_fct_key_saas_bymonth
+[0m13:21:44.737354 [debug] [Thread-1 (]: Writing runtime sql for node "model.futureproofds.stg_fct_key_saas_bymonth"
+[0m13:21:44.737732 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.stg_fct_key_saas_bymonth"
+[0m13:21:44.737903 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_bymonth: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.stg_fct_key_saas_bymonth"} */
+
+  create view "fpds"."public"."stg_fct_key_saas_bymonth__dbt_tmp"
+    
+    
+  as (
+    
+
+select * from "fpds"."public"."fct_key_saas_bymonth"
+  );
+[0m13:21:44.738047 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:21:44.751846 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.014 seconds
+[0m13:21:44.753509 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.stg_fct_key_saas_bymonth"
+[0m13:21:44.753706 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_bymonth: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.stg_fct_key_saas_bymonth"} */
+alter table "fpds"."public"."stg_fct_key_saas_bymonth__dbt_tmp" rename to "stg_fct_key_saas_bymonth"
+[0m13:21:44.754521 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:21:44.755130 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_bymonth: COMMIT
+[0m13:21:44.755289 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.stg_fct_key_saas_bymonth"
+[0m13:21:44.755430 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_bymonth: COMMIT
+[0m13:21:44.756404 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m13:21:44.758195 [debug] [Thread-1 (]: Applying DROP to: "fpds"."public"."stg_fct_key_saas_bymonth__dbt_backup"
+[0m13:21:44.758527 [debug] [Thread-1 (]: Using postgres connection "model.futureproofds.stg_fct_key_saas_bymonth"
+[0m13:21:44.758691 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_bymonth: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "futureproofds", "target_name": "dev", "node_id": "model.futureproofds.stg_fct_key_saas_bymonth"} */
+drop view if exists "fpds"."public"."stg_fct_key_saas_bymonth__dbt_backup" cascade
+[0m13:21:44.759211 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m13:21:44.759697 [debug] [Thread-1 (]: On model.futureproofds.stg_fct_key_saas_bymonth: Close
+[0m13:21:44.759968 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '927d9dcc-4960-40b1-88d1-d64e9c452445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d2c6a0>]}
+[0m13:21:44.760241 [info ] [Thread-1 (]: 3 of 3 OK created sql view model public.stg_fct_key_saas_bymonth ............... [[32mCREATE VIEW[0m in 0.03s]
+[0m13:21:44.760479 [debug] [Thread-1 (]: Finished running node model.futureproofds.stg_fct_key_saas_bymonth
+[0m13:21:44.760965 [debug] [MainThread]: On master: COMMIT
+[0m13:21:44.761112 [debug] [MainThread]: Using postgres connection "master"
+[0m13:21:44.761237 [debug] [MainThread]: On master: COMMIT
+[0m13:21:44.761369 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:44.771324 [debug] [MainThread]: SQL status: COMMIT in 0.010 seconds
+[0m13:21:44.771475 [debug] [MainThread]: On master: Close
+[0m13:21:44.771650 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:21:44.771772 [debug] [MainThread]: Connection 'model.futureproofds.stg_fct_key_saas_bymonth' was properly closed.
+[0m13:21:44.771933 [info ] [MainThread]: 
+[0m13:21:44.772079 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.28 seconds (0.28s).
+[0m13:21:44.772458 [debug] [MainThread]: Command end result
+[0m13:21:44.787643 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/damian.sanchez/Desktop/repos/futureproofds/target/manifest.json
+[0m13:21:44.790549 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/damian.sanchez/Desktop/repos/futureproofds/target/semantic_manifest.json
+[0m13:21:44.793673 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/damian.sanchez/Desktop/repos/futureproofds/target/run_results.json
+[0m13:21:44.793865 [info ] [MainThread]: 
+[0m13:21:44.794040 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:21:44.794181 [info ] [MainThread]: 
+[0m13:21:44.794318 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m13:21:44.795804 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.213725, "process_in_blocks": "0", "process_kernel_time": 0.242255, "process_mem_max_rss": "172965888", "process_out_blocks": "0", "process_user_time": 2.176154}
+[0m13:21:44.796037 [debug] [MainThread]: Command `dbt run` succeeded at 13:21:44.795998 after 1.21 seconds
+[0m13:21:44.796220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061233a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062ace50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113b12a0>]}
+[0m13:21:44.796387 [debug] [MainThread]: Flushing usage events
+[0m13:21:45.144659 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:21:54.782476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109dceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f1caf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f1d1b0>]}
+
+
+============================== 13:21:54.784699 | 14c7656d-2fef-40e4-81ed-c2db28ae296d ==============================
+[0m13:21:54.784699 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:21:54.784923 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'introspect': 'True', 'log_format': 'default', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'target_path': 'None', 'version_check': 'True', 'quiet': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'invocation_command': 'dbt validate-configs', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'partial_parse': 'True', 'write_json': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'empty': 'None', 'cache_selected_only': 'False', 'use_colors': 'True'}
+[0m13:21:54.791180 [info ] [MainThread]: dbt version: 1.11.8
+[0m13:21:54.791342 [info ] [MainThread]: python version: 3.10.20
+[0m13:21:54.791453 [info ] [MainThread]: python path: /Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/bin/python
+[0m13:21:54.791558 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m13:21:54.816582 [info ] [MainThread]: Using profiles dir at /Users/damian.sanchez/.dbt
+[0m13:21:54.816829 [info ] [MainThread]: Using profiles.yml file at /Users/damian.sanchez/.dbt/profiles.yml
+[0m13:21:54.816947 [info ] [MainThread]: Using dbt_project.yml file at /Users/damian.sanchez/Desktop/repos/futureproofds/dbt_project.yml
+[0m13:21:54.817337 [info ] [MainThread]: adapter type: postgres
+[0m13:21:54.817548 [info ] [MainThread]: adapter version: 1.10.0
+[0m13:21:54.868226 [info ] [MainThread]: Configuration:
+[0m13:21:54.868471 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:21:54.868668 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:21:54.868795 [info ] [MainThread]: Required dependencies:
+[0m13:21:54.868981 [debug] [MainThread]: Executing "git --help"
+[0m13:21:54.884285 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:21:54.884790 [debug] [MainThread]: STDERR: "b''"
+[0m13:21:54.884964 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:21:54.885085 [info ] [MainThread]: Connection:
+[0m13:21:54.885242 [info ] [MainThread]:   host: localhost
+[0m13:21:54.885343 [info ] [MainThread]:   port: 5432
+[0m13:21:54.885439 [info ] [MainThread]:   user: damian.sanchez
+[0m13:21:54.885534 [info ] [MainThread]:   database: fpds
+[0m13:21:54.885628 [info ] [MainThread]:   schema: public
+[0m13:21:54.885723 [info ] [MainThread]:   connect_timeout: 10
+[0m13:21:54.885817 [info ] [MainThread]:   role: None
+[0m13:21:54.885912 [info ] [MainThread]:   search_path: None
+[0m13:21:54.886006 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:21:54.886100 [info ] [MainThread]:   sslmode: None
+[0m13:21:54.886195 [info ] [MainThread]:   sslcert: None
+[0m13:21:54.886306 [info ] [MainThread]:   sslkey: None
+[0m13:21:54.886413 [info ] [MainThread]:   sslrootcert: None
+[0m13:21:54.886519 [info ] [MainThread]:   application_name: dbt
+[0m13:21:54.886854 [info ] [MainThread]:   retries: 1
+[0m13:21:54.887226 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:21:54.961587 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:21:54.984999 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:21:54.985235 [debug] [MainThread]: On debug: select 1 as id
+[0m13:21:54.985372 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:21:55.003023 [debug] [MainThread]: SQL status: SELECT 1 in 0.018 seconds
+[0m13:21:55.003519 [debug] [MainThread]: On debug: Close
+[0m13:21:55.003688 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:21:55.003803 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:21:55.004554 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.27272242, "process_in_blocks": "0", "process_kernel_time": 0.218302, "process_mem_max_rss": "164904960", "process_out_blocks": "0", "process_user_time": 1.507869}
+[0m13:21:55.004802 [debug] [MainThread]: Command `cli debug` succeeded at 13:21:55.004748 after 0.27 seconds
+[0m13:21:55.004955 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:21:55.005117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109dceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c66fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f1c130>]}
+[0m13:21:55.005299 [debug] [MainThread]: Flushing usage events
+[0m13:21:55.334417 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:21:55.696121 [debug] [MainThread]: Acquiring new postgres connection 'MetricFlow_dry_run_request_mf_rid__ohlxhtr4'
+[0m13:21:55.696448 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__ohlxhtr4"
+[0m13:21:55.696656 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__ohlxhtr4: EXPLAIN SELECT * FROM "fpds"."public"."stg_fct_key_saas_bymonth"
+[0m13:21:55.696847 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:21:55.710588 [debug] [MainThread]: SQL status: EXPLAIN in 0.014 seconds
+[0m13:21:55.711242 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__ohlxhtr4: ROLLBACK
+[0m13:21:55.711691 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__ohlxhtr4: Close
+[0m13:21:55.712044 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__ohlxhtr4, now MetricFlow_dry_run_request_mf_rid__siwl97o5)
+[0m13:21:55.712264 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__siwl97o5"
+[0m13:21:55.712452 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__siwl97o5: EXPLAIN SELECT * FROM "fpds"."public"."stg_fct_key_saas_byday"
+[0m13:21:55.712630 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:55.722225 [debug] [MainThread]: SQL status: EXPLAIN in 0.010 seconds
+[0m13:21:55.722701 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__siwl97o5: ROLLBACK
+[0m13:21:55.723064 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__siwl97o5: Close
+[0m13:21:55.789125 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__siwl97o5, now MetricFlow_dry_run_request_mf_rid__xvhnxeu4)
+[0m13:21:55.789407 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__xvhnxeu4"
+[0m13:21:55.789626 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__xvhnxeu4: EXPLAIN -- Read Elements From Semantic Model 'keysaas_daily_sl'
+-- Metric Time Dimension 'interval_start'
+-- Select: [
+--   'billing_account_id',
+--   'account_unique_key',
+--   'is_nts',
+--   'product',
+--   'plan_code',
+--   'plan_assistance_level',
+--   'plan_group',
+--   'billing_source',
+--   'country_name_asnow',
+--   'continent_asnow',
+--   'currency',
+--   'interval_start__day',
+--   'interval_start__week',
+--   'interval_start__month',
+--   'interval_start__quarter',
+--   'interval_start__year',
+--   'interval_start__extract_year',
+--   'interval_start__extract_quarter',
+--   'interval_start__extract_month',
+--   'interval_start__extract_day',
+--   'interval_start__extract_dow',
+--   'interval_start__extract_doy',
+-- ]
+SELECT
+  DATE_TRUNC('day', interval_start) AS interval_start__day
+  , DATE_TRUNC('week', interval_start) AS interval_start__week
+  , DATE_TRUNC('month', interval_start) AS interval_start__month
+  , DATE_TRUNC('quarter', interval_start) AS interval_start__quarter
+  , DATE_TRUNC('year', interval_start) AS interval_start__year
+  , EXTRACT(year FROM interval_start) AS interval_start__extract_year
+  , EXTRACT(quarter FROM interval_start) AS interval_start__extract_quarter
+  , EXTRACT(month FROM interval_start) AS interval_start__extract_month
+  , EXTRACT(day FROM interval_start) AS interval_start__extract_day
+  , EXTRACT(isodow FROM interval_start) AS interval_start__extract_dow
+  , EXTRACT(doy FROM interval_start) AS interval_start__extract_doy
+  , billing_account_id
+  , account_unique_key
+  , is_nts
+  , product
+  , plan_code
+  , plan_assistance_level
+  , plan_group
+  , billing_source
+  , country_name_asnow
+  , continent_asnow
+  , currency
+FROM "fpds"."public"."stg_fct_key_saas_byday" keysaas_daily_sl_src_0
+[0m13:21:55.789833 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:55.802617 [debug] [MainThread]: SQL status: EXPLAIN in 0.013 seconds
+[0m13:21:55.803188 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__xvhnxeu4: ROLLBACK
+[0m13:21:55.803705 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__xvhnxeu4: Close
+[0m13:21:55.806288 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__xvhnxeu4, now MetricFlow_dry_run_request_mf_rid__k4zvf7l5)
+[0m13:21:55.806482 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__k4zvf7l5"
+[0m13:21:55.806672 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__k4zvf7l5: EXPLAIN -- Read Elements From Semantic Model 'keysaas_monthly_sl'
+-- Metric Time Dimension 'interval_start'
+-- Select: [
+--   'billing_account_id',
+--   'account_unique_key',
+--   'is_nts',
+--   'product',
+--   'plan_code',
+--   'plan_assistance_level',
+--   'plan_group',
+--   'billing_source',
+--   'country_name_asnow',
+--   'continent_asnow',
+--   'currency',
+--   'interval_start__month',
+--   'interval_start__quarter',
+--   'interval_start__year',
+--   'interval_start__extract_year',
+--   'interval_start__extract_quarter',
+--   'interval_start__extract_month',
+-- ]
+SELECT
+  DATE_TRUNC('month', interval_start) AS interval_start__month
+  , DATE_TRUNC('quarter', interval_start) AS interval_start__quarter
+  , DATE_TRUNC('year', interval_start) AS interval_start__year
+  , EXTRACT(year FROM interval_start) AS interval_start__extract_year
+  , EXTRACT(quarter FROM interval_start) AS interval_start__extract_quarter
+  , EXTRACT(month FROM interval_start) AS interval_start__extract_month
+  , billing_account_id
+  , account_unique_key
+  , is_nts
+  , product
+  , plan_code
+  , plan_assistance_level
+  , plan_group
+  , billing_source
+  , country_name_asnow
+  , continent_asnow
+  , currency
+FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_0
+[0m13:21:55.806866 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:55.816111 [debug] [MainThread]: SQL status: EXPLAIN in 0.009 seconds
+[0m13:21:55.816715 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__k4zvf7l5: ROLLBACK
+[0m13:21:55.817105 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__k4zvf7l5: Close
+[0m13:21:55.882606 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__k4zvf7l5, now MetricFlow_dry_run_request_mf_rid__oa11l86v)
+[0m13:21:55.882960 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__oa11l86v"
+[0m13:21:55.883169 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__oa11l86v: EXPLAIN -- Read Elements From Semantic Model 'keysaas_daily_sl'
+-- Metric Time Dimension 'interval_start'
+-- Select: ['keysaas_daily_unique_key']
+SELECT
+  unique_key AS keysaas_daily_unique_key
+FROM "fpds"."public"."stg_fct_key_saas_byday" keysaas_daily_sl_src_2
+[0m13:21:55.883357 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:55.892684 [debug] [MainThread]: SQL status: EXPLAIN in 0.009 seconds
+[0m13:21:55.893275 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__oa11l86v: ROLLBACK
+[0m13:21:55.893707 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__oa11l86v: Close
+[0m13:21:55.895592 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__oa11l86v, now MetricFlow_dry_run_request_mf_rid__x6tv1ifh)
+[0m13:21:55.895804 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__x6tv1ifh"
+[0m13:21:55.895979 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__x6tv1ifh: EXPLAIN -- Read Elements From Semantic Model 'keysaas_monthly_sl'
+-- Metric Time Dimension 'interval_start'
+-- Select: ['keysaas_monthly_unique_key']
+SELECT
+  unique_key AS keysaas_monthly_unique_key
+FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_2
+[0m13:21:55.896147 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:55.905281 [debug] [MainThread]: SQL status: EXPLAIN in 0.009 seconds
+[0m13:21:55.905730 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__x6tv1ifh: ROLLBACK
+[0m13:21:55.906113 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__x6tv1ifh: Close
+[0m13:21:55.971968 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__x6tv1ifh, now MetricFlow_dry_run_request_mf_rid__0hab7s5n)
+[0m13:21:55.972223 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__0hab7s5n"
+[0m13:21:55.972379 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__0hab7s5n: EXPLAIN -- Read Elements From Semantic Model 'keysaas_monthly_sl'
+-- Metric Time Dimension 'interval_start'
+-- Select: [
+--   '__key_saas_monthly_new_revenue_mt',
+--   '__key_saas_monthly_reactivated_revenue_mt',
+--   '__key_saas_monthly_expanded_revenue_mt',
+--   '__key_saas_monthly_contracted_revenue_mt',
+--   '__key_saas_monthly_lost_recurring_revenue_mt',
+-- ]
+SELECT
+  case when first_time_recurring = 1 then recurring_revenue else 0 end AS __key_saas_monthly_new_revenue_mt
+  , case when reactivated_recurring_customer = 1 then recurring_revenue else 0 end AS __key_saas_monthly_reactivated_revenue_mt
+  , expanded_recurring_revenue AS __key_saas_monthly_expanded_revenue_mt
+  , contracted_recurring_revenue AS __key_saas_monthly_contracted_revenue_mt
+  , case when churned_recurring = 1 then lost_recurring_revenue else 0 end AS __key_saas_monthly_lost_recurring_revenue_mt
+FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_4
+[0m13:21:55.972524 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:55.980871 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:55.981445 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__0hab7s5n: ROLLBACK
+[0m13:21:55.981788 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__0hab7s5n: Close
+[0m13:21:55.983643 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__0hab7s5n, now MetricFlow_dry_run_request_mf_rid__irk52577)
+[0m13:21:55.983812 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__irk52577"
+[0m13:21:55.983964 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__irk52577: EXPLAIN -- Read Elements From Semantic Model 'keysaas_daily_sl'
+-- Metric Time Dimension 'interval_start'
+-- Select: [
+--   '__key_saas_daily_new_revenue_mt',
+--   '__key_saas_daily_reactivated_revenue_mt',
+--   '__key_saas_daily_expanded_revenue_mt',
+--   '__key_saas_daily_contracted_revenue_mt',
+--   '__key_saas_daily_lost_recurring_revenue_mt',
+-- ]
+SELECT
+  case when first_time_recurring = 1 then recurring_revenue else 0 end AS __key_saas_daily_new_revenue_mt
+  , case when reactivated_recurring_customer = 1 then recurring_revenue else 0 end AS __key_saas_daily_reactivated_revenue_mt
+  , expanded_recurring_revenue AS __key_saas_daily_expanded_revenue_mt
+  , contracted_recurring_revenue AS __key_saas_daily_contracted_revenue_mt
+  , case when churned_recurring = 1 then lost_recurring_revenue else 0 end AS __key_saas_daily_lost_recurring_revenue_mt
+FROM "fpds"."public"."stg_fct_key_saas_byday" keysaas_daily_sl_src_4
+[0m13:21:55.984110 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:55.992410 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:55.992856 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__irk52577: ROLLBACK
+[0m13:21:55.993196 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__irk52577: Close
+[0m13:21:56.065172 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__irk52577, now MetricFlow_dry_run_request_mf_rid__b54ks2o7)
+[0m13:21:56.065462 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__b54ks2o7"
+[0m13:21:56.065635 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__b54ks2o7: EXPLAIN SELECT
+  metric_time__month
+  , SUM(__key_saas_monthly_new_revenue_mt) AS key_saas_monthly_new_revenue_mt
+FROM (
+  SELECT
+    DATE_TRUNC('month', interval_start) AS metric_time__month
+    , case when first_time_recurring = 1 then recurring_revenue else 0 end AS __key_saas_monthly_new_revenue_mt
+  FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_10000
+) subq_3
+GROUP BY
+  metric_time__month
+[0m13:21:56.065796 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.075878 [debug] [MainThread]: SQL status: EXPLAIN in 0.010 seconds
+[0m13:21:56.076475 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__b54ks2o7: ROLLBACK
+[0m13:21:56.076858 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__b54ks2o7: Close
+[0m13:21:56.081674 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__b54ks2o7, now MetricFlow_dry_run_request_mf_rid__s2m32lxs)
+[0m13:21:56.081868 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__s2m32lxs"
+[0m13:21:56.082026 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__s2m32lxs: EXPLAIN SELECT
+  metric_time__month
+  , SUM(__key_saas_monthly_reactivated_revenue_mt) AS key_saas_monthly_reactivated_revenue_mt
+FROM (
+  SELECT
+    DATE_TRUNC('month', interval_start) AS metric_time__month
+    , case when reactivated_recurring_customer = 1 then recurring_revenue else 0 end AS __key_saas_monthly_reactivated_revenue_mt
+  FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_10000
+) subq_3
+GROUP BY
+  metric_time__month
+[0m13:21:56.082176 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.089891 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:56.090396 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__s2m32lxs: ROLLBACK
+[0m13:21:56.090772 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__s2m32lxs: Close
+[0m13:21:56.095389 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__s2m32lxs, now MetricFlow_dry_run_request_mf_rid__08kzfhai)
+[0m13:21:56.095570 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__08kzfhai"
+[0m13:21:56.095720 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__08kzfhai: EXPLAIN SELECT
+  DATE_TRUNC('month', interval_start) AS metric_time__month
+  , SUM(expanded_recurring_revenue) AS key_saas_monthly_expanded_revenue_mt
+FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_10000
+GROUP BY
+  DATE_TRUNC('month', interval_start)
+[0m13:21:56.095867 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.104027 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:56.104453 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__08kzfhai: ROLLBACK
+[0m13:21:56.104763 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__08kzfhai: Close
+[0m13:21:56.109444 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__08kzfhai, now MetricFlow_dry_run_request_mf_rid__n4cf57sz)
+[0m13:21:56.109623 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__n4cf57sz"
+[0m13:21:56.109770 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__n4cf57sz: EXPLAIN SELECT
+  DATE_TRUNC('month', interval_start) AS metric_time__month
+  , SUM(contracted_recurring_revenue) AS key_saas_monthly_contracted_revenue_mt
+FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_10000
+GROUP BY
+  DATE_TRUNC('month', interval_start)
+[0m13:21:56.109910 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.118089 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:56.118479 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__n4cf57sz: ROLLBACK
+[0m13:21:56.118751 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__n4cf57sz: Close
+[0m13:21:56.123165 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__n4cf57sz, now MetricFlow_dry_run_request_mf_rid__82nxl37f)
+[0m13:21:56.123369 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__82nxl37f"
+[0m13:21:56.123528 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__82nxl37f: EXPLAIN SELECT
+  metric_time__month
+  , SUM(__key_saas_monthly_lost_recurring_revenue_mt) AS key_saas_monthly_lost_recurring_revenue_mt
+FROM (
+  SELECT
+    DATE_TRUNC('month', interval_start) AS metric_time__month
+    , case when churned_recurring = 1 then lost_recurring_revenue else 0 end AS __key_saas_monthly_lost_recurring_revenue_mt
+  FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_10000
+) subq_3
+GROUP BY
+  metric_time__month
+[0m13:21:56.123679 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.131527 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:56.131970 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__82nxl37f: ROLLBACK
+[0m13:21:56.132311 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__82nxl37f: Close
+[0m13:21:56.138053 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__82nxl37f, now MetricFlow_dry_run_request_mf_rid__9vbk0c26)
+[0m13:21:56.138234 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__9vbk0c26"
+[0m13:21:56.138403 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__9vbk0c26: EXPLAIN SELECT
+  metric_time__month
+  , key_saas_monthly_new_revenue_mt + key_saas_monthly_reactivated_revenue_mt + key_saas_monthly_expanded_revenue_mt + key_saas_monthly_contracted_revenue_mt - key_saas_monthly_lost_recurring_revenue_mt AS key_saas_monthly_mrr_mt
+FROM (
+  SELECT
+    metric_time__month
+    , SUM(__key_saas_monthly_new_revenue_mt) AS key_saas_monthly_new_revenue_mt
+    , SUM(__key_saas_monthly_reactivated_revenue_mt) AS key_saas_monthly_reactivated_revenue_mt
+    , SUM(__key_saas_monthly_expanded_revenue_mt) AS key_saas_monthly_expanded_revenue_mt
+    , SUM(__key_saas_monthly_contracted_revenue_mt) AS key_saas_monthly_contracted_revenue_mt
+    , SUM(__key_saas_monthly_lost_recurring_revenue_mt) AS key_saas_monthly_lost_recurring_revenue_mt
+  FROM (
+    SELECT
+      DATE_TRUNC('month', interval_start) AS metric_time__month
+      , case when first_time_recurring = 1 then recurring_revenue else 0 end AS __key_saas_monthly_new_revenue_mt
+      , case when reactivated_recurring_customer = 1 then recurring_revenue else 0 end AS __key_saas_monthly_reactivated_revenue_mt
+      , expanded_recurring_revenue AS __key_saas_monthly_expanded_revenue_mt
+      , contracted_recurring_revenue AS __key_saas_monthly_contracted_revenue_mt
+      , case when churned_recurring = 1 then lost_recurring_revenue else 0 end AS __key_saas_monthly_lost_recurring_revenue_mt
+    FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_10000
+  ) subq_3
+  GROUP BY
+    metric_time__month
+) subq_5
+[0m13:21:56.138566 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.148333 [debug] [MainThread]: SQL status: EXPLAIN in 0.010 seconds
+[0m13:21:56.148787 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__9vbk0c26: ROLLBACK
+[0m13:21:56.149105 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__9vbk0c26: Close
+[0m13:21:56.155293 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__9vbk0c26, now MetricFlow_dry_run_request_mf_rid__eu69hvao)
+[0m13:21:56.155514 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__eu69hvao"
+[0m13:21:56.155661 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__eu69hvao: EXPLAIN SELECT
+  metric_time__day
+  , SUM(__key_saas_daily_new_revenue_mt) AS key_saas_daily_new_revenue_mt
+FROM (
+  SELECT
+    DATE_TRUNC('day', interval_start) AS metric_time__day
+    , case when first_time_recurring = 1 then recurring_revenue else 0 end AS __key_saas_daily_new_revenue_mt
+  FROM "fpds"."public"."stg_fct_key_saas_byday" keysaas_daily_sl_src_10000
+) subq_3
+GROUP BY
+  metric_time__day
+[0m13:21:56.155797 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.163633 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:56.163989 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__eu69hvao: ROLLBACK
+[0m13:21:56.164289 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__eu69hvao: Close
+[0m13:21:56.168698 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__eu69hvao, now MetricFlow_dry_run_request_mf_rid__n05rffwf)
+[0m13:21:56.168873 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__n05rffwf"
+[0m13:21:56.169013 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__n05rffwf: EXPLAIN SELECT
+  metric_time__day
+  , SUM(__key_saas_daily_reactivated_revenue_mt) AS key_saas_daily_reactivated_revenue_mt
+FROM (
+  SELECT
+    DATE_TRUNC('day', interval_start) AS metric_time__day
+    , case when reactivated_recurring_customer = 1 then recurring_revenue else 0 end AS __key_saas_daily_reactivated_revenue_mt
+  FROM "fpds"."public"."stg_fct_key_saas_byday" keysaas_daily_sl_src_10000
+) subq_3
+GROUP BY
+  metric_time__day
+[0m13:21:56.169160 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.178248 [debug] [MainThread]: SQL status: EXPLAIN in 0.009 seconds
+[0m13:21:56.178686 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__n05rffwf: ROLLBACK
+[0m13:21:56.179207 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__n05rffwf: Close
+[0m13:21:56.184013 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__n05rffwf, now MetricFlow_dry_run_request_mf_rid__a4w2vt2x)
+[0m13:21:56.184183 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__a4w2vt2x"
+[0m13:21:56.184310 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__a4w2vt2x: EXPLAIN SELECT
+  DATE_TRUNC('day', interval_start) AS metric_time__day
+  , SUM(expanded_recurring_revenue) AS key_saas_daily_expanded_revenue_mt
+FROM "fpds"."public"."stg_fct_key_saas_byday" keysaas_daily_sl_src_10000
+GROUP BY
+  DATE_TRUNC('day', interval_start)
+[0m13:21:56.184429 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.192255 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:56.192650 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__a4w2vt2x: ROLLBACK
+[0m13:21:56.192951 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__a4w2vt2x: Close
+[0m13:21:56.197392 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__a4w2vt2x, now MetricFlow_dry_run_request_mf_rid__07wvh7b1)
+[0m13:21:56.197546 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__07wvh7b1"
+[0m13:21:56.197674 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__07wvh7b1: EXPLAIN SELECT
+  DATE_TRUNC('day', interval_start) AS metric_time__day
+  , SUM(contracted_recurring_revenue) AS key_saas_daily_contracted_revenue_mt
+FROM "fpds"."public"."stg_fct_key_saas_byday" keysaas_daily_sl_src_10000
+GROUP BY
+  DATE_TRUNC('day', interval_start)
+[0m13:21:56.197797 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.206651 [debug] [MainThread]: SQL status: EXPLAIN in 0.009 seconds
+[0m13:21:56.207027 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__07wvh7b1: ROLLBACK
+[0m13:21:56.207309 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__07wvh7b1: Close
+[0m13:21:56.211701 [debug] [MainThread]: Re-using an available connection from the pool (formerly MetricFlow_dry_run_request_mf_rid__07wvh7b1, now MetricFlow_dry_run_request_mf_rid__xlit4zsu)
+[0m13:21:56.211851 [debug] [MainThread]: Using postgres connection "MetricFlow_dry_run_request_mf_rid__xlit4zsu"
+[0m13:21:56.211983 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__xlit4zsu: EXPLAIN SELECT
+  metric_time__day
+  , SUM(__key_saas_daily_lost_recurring_revenue_mt) AS key_saas_daily_lost_recurring_revenue_mt
+FROM (
+  SELECT
+    DATE_TRUNC('day', interval_start) AS metric_time__day
+    , case when churned_recurring = 1 then lost_recurring_revenue else 0 end AS __key_saas_daily_lost_recurring_revenue_mt
+  FROM "fpds"."public"."stg_fct_key_saas_byday" keysaas_daily_sl_src_10000
+) subq_3
+GROUP BY
+  metric_time__day
+[0m13:21:56.212108 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:21:56.220484 [debug] [MainThread]: SQL status: EXPLAIN in 0.008 seconds
+[0m13:21:56.220837 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__xlit4zsu: ROLLBACK
+[0m13:21:56.221149 [debug] [MainThread]: On MetricFlow_dry_run_request_mf_rid__xlit4zsu: Close
+[0m13:22:04.997783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cbe080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12091cfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12091d660>]}
+
+
+============================== 13:22:04.999905 | 1a176635-3668-4944-a6c2-b6b776ad2430 ==============================
+[0m13:22:04.999905 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:22:05.000140 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'version_check': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'log_path': '/Users/damian.sanchez/Desktop/repos/futureproofds/logs', 'log_cache_events': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'True', 'empty': 'None', 'no_print': 'None', 'profiles_dir': '/Users/damian.sanchez/.dbt', 'use_colors': 'True', 'warn_error': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt query --metrics key_saas_monthly_new_revenue_mt --group-by metric_time'}
+[0m13:22:05.006602 [info ] [MainThread]: dbt version: 1.11.8
+[0m13:22:05.006795 [info ] [MainThread]: python version: 3.10.20
+[0m13:22:05.006910 [info ] [MainThread]: python path: /Users/damian.sanchez/Library/Caches/pypoetry/virtualenvs/ai-workflows-dependency-audit-WeqgBa_1-py3.10/bin/python
+[0m13:22:05.007015 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m13:22:05.033220 [info ] [MainThread]: Using profiles dir at /Users/damian.sanchez/.dbt
+[0m13:22:05.035980 [info ] [MainThread]: Using profiles.yml file at /Users/damian.sanchez/.dbt/profiles.yml
+[0m13:22:05.036149 [info ] [MainThread]: Using dbt_project.yml file at /Users/damian.sanchez/Desktop/repos/futureproofds/dbt_project.yml
+[0m13:22:05.036507 [info ] [MainThread]: adapter type: postgres
+[0m13:22:05.036639 [info ] [MainThread]: adapter version: 1.10.0
+[0m13:22:05.087053 [info ] [MainThread]: Configuration:
+[0m13:22:05.087344 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:22:05.087457 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:22:05.087557 [info ] [MainThread]: Required dependencies:
+[0m13:22:05.087732 [debug] [MainThread]: Executing "git --help"
+[0m13:22:05.099972 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:22:05.100330 [debug] [MainThread]: STDERR: "b''"
+[0m13:22:05.100463 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:22:05.100572 [info ] [MainThread]: Connection:
+[0m13:22:05.100731 [info ] [MainThread]:   host: localhost
+[0m13:22:05.100846 [info ] [MainThread]:   port: 5432
+[0m13:22:05.100957 [info ] [MainThread]:   user: damian.sanchez
+[0m13:22:05.101066 [info ] [MainThread]:   database: fpds
+[0m13:22:05.101166 [info ] [MainThread]:   schema: public
+[0m13:22:05.101258 [info ] [MainThread]:   connect_timeout: 10
+[0m13:22:05.101359 [info ] [MainThread]:   role: None
+[0m13:22:05.101470 [info ] [MainThread]:   search_path: None
+[0m13:22:05.101577 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:22:05.101683 [info ] [MainThread]:   sslmode: None
+[0m13:22:05.101794 [info ] [MainThread]:   sslcert: None
+[0m13:22:05.101902 [info ] [MainThread]:   sslkey: None
+[0m13:22:05.102011 [info ] [MainThread]:   sslrootcert: None
+[0m13:22:05.102116 [info ] [MainThread]:   application_name: dbt
+[0m13:22:05.102214 [info ] [MainThread]:   retries: 1
+[0m13:22:05.102611 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:22:05.174830 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:22:05.194101 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:22:05.194286 [debug] [MainThread]: On debug: select 1 as id
+[0m13:22:05.194403 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:22:05.212071 [debug] [MainThread]: SQL status: SELECT 1 in 0.018 seconds
+[0m13:22:05.212503 [debug] [MainThread]: On debug: Close
+[0m13:22:05.212658 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:22:05.212774 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:22:05.213592 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.26594475, "process_in_blocks": "0", "process_kernel_time": 0.206494, "process_mem_max_rss": "165986304", "process_out_blocks": "0", "process_user_time": 1.505957}
+[0m13:22:05.213796 [debug] [MainThread]: Command `cli debug` succeeded at 13:22:05.213756 after 0.27 seconds
+[0m13:22:05.213930 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:22:05.214071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cbe080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1208467d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12091c5e0>]}
+[0m13:22:05.214256 [debug] [MainThread]: Flushing usage events
+[0m13:22:05.542435 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:22:05.736348 [debug] [MainThread]: Acquiring new postgres connection 'MetricFlow_request_mf_rid__o5a5ros8'
+[0m13:22:05.736585 [debug] [MainThread]: Using postgres connection "MetricFlow_request_mf_rid__o5a5ros8"
+[0m13:22:05.736738 [debug] [MainThread]: On MetricFlow_request_mf_rid__o5a5ros8: -- Aggregate Inputs for Simple Metrics
+-- Compute Metrics via Expressions
+-- Write to DataTable
+SELECT
+  metric_time__month
+  , SUM(__key_saas_monthly_new_revenue_mt) AS key_saas_monthly_new_revenue_mt
+FROM (
+  -- Read Elements From Semantic Model 'keysaas_monthly_sl'
+  -- Metric Time Dimension 'interval_start'
+  -- Select: ['__key_saas_monthly_new_revenue_mt', 'metric_time__month']
+  -- Select: ['__key_saas_monthly_new_revenue_mt', 'metric_time__month']
+  SELECT
+    DATE_TRUNC('month', interval_start) AS metric_time__month
+    , case when first_time_recurring = 1 then recurring_revenue else 0 end AS __key_saas_monthly_new_revenue_mt
+  FROM "fpds"."public"."stg_fct_key_saas_bymonth" keysaas_monthly_sl_src_10000
+) subq_3
+GROUP BY
+  metric_time__month
+[0m13:22:05.736863 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:22:05.755481 [debug] [MainThread]: SQL status: SELECT 11 in 0.019 seconds
+[0m13:22:05.756181 [debug] [MainThread]: On MetricFlow_request_mf_rid__o5a5ros8: ROLLBACK
+[0m13:22:05.756513 [debug] [MainThread]: On MetricFlow_request_mf_rid__o5a5ros8: Close
