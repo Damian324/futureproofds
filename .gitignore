@@ -1,1 +1,3 @@
 fpds_venv/
+target/
+logs/
