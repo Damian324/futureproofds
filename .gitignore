@@ -1,3 +1,4 @@
 fpds_venv/
 target/
 logs/
+.cursor/
